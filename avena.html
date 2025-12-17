@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avena — Información Nutricional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --good:#16a34a;
+      --mid:#eab308;
+      --low:#dc2626;
+      --shadow:0 6px 18px rgba(15,23,42,0.06);
+      font-family:Inter, system-ui, Arial;
+    }
+    body{margin:0;background:var(--bg);color:#0f172a}
+    .container{max-width:1000px;margin:32px auto;padding:20px}
+    .card{background:var(--card);border-radius:14px;padding:20px;box-shadow:var(--shadow);margin-bottom:18px}
+    h1,h2,h3{margin-top:0}
+    .hero{display:flex;gap:20px;align-items:center}
+    .hero img{width:160px;height:160px;object-fit:cover;border-radius:12px}
+    .badges{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+    .badge{padding:6px 12px;border-radius:999px;font-weight:600;font-size:14px}
+    .green{background:#dcfce7;color:var(--good)}
+    .yellow{background:#fef9c3;color:#854d0e}
+    .red{background:#fee2e2;color:var(--low)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .box{text-align:center;padding:14px;border-radius:12px;background:#fafafa}
+    .box strong{font-size:18px}
+    table{width:100%;border-collapse:collapse;margin-top:12px}
+    th,td{padding:8px;border-bottom:1px solid #f1f1f3;text-align:left}
+    th{color:var(--muted)}
+    ul{margin:8px 0 0 18px}
+    @media(max-width:700px){.hero{flex-direction:column;text-align:center}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="card">
+      <div class="hero">
+        <img src="https://images.unsplash.com/photo-1585238342028-4bbcfa23b8c8" alt="Avena">
+        <div>
+          <h1>🥣 Avena (100 g)</h1>
+          <p>Cereal integral muy usado en desayunos por su alto valor nutricional.</p>
+          <div class="badges">
+            <span class="badge green">Energía duradera</span>
+            <span class="badge green">Rica en fibra</span>
+            <span class="badge yellow">Calorías medias</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>🔢 Valores nutricionales (100 g)</h2>
+      <div class="grid">
+        <div class="box"><strong>389</strong><br>Calorías</div>
+        <div class="box"><strong>66 g</strong><br>Carbohidratos</div>
+        <div class="box"><strong>10.6 g</strong><br>Fibra</div>
+        <div class="box"><strong>16.9 g</strong><br>Proteína</div>
+        <div class="box"><strong>6.9 g</strong><br>Grasas</div>
+        <div class="box"><strong>1 g</strong><br>Azúcares</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>📋 Tabla nutricional</h2>
+      <table>
+        <tr><th>Calorías</th><td>389 kcal</td></tr>
+        <tr><th>Grasas</th><td>6.9 g</td></tr>
+        <tr><th>Carbohidratos</th><td>66 g</td></tr>
+        <tr><th>Azúcares</th><td>1 g</td></tr>
+        <tr><th>Fibra</th><td>10.6 g</td></tr>
+        <tr><th>Proteínas</th><td>16.9 g</td></tr>
+        <tr><th>Sodio</th><td>2 mg</td></tr>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>🚦 Evaluación tipo semáforo</h2>
+      <ul>
+        <li>Fibra: <strong style="color:var(--good)">🟢 Alta</strong></li>
+        <li>Azúcares: <strong style="color:var(--good)">🟢 Bajo</strong></li>
+        <li>Calorías: <strong style="color:#854d0e">🟡 Medio</strong></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🎓 Explicación para colegio</h2>
+      <p>La avena es un alimento muy nutritivo que da energía por más tiempo gracias a sus carbohidratos complejos. Además, su alto contenido de fibra ayuda a la digestión y a sentirse lleno por más tiempo.</p>
+      <p>👉 Se recomienda consumirla en el desayuno acompañada de frutas.</p>
+    </div>
+
+  </div>
+</body>
+</html>
